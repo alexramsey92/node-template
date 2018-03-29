@@ -7,7 +7,8 @@ app.set('port', 3000);
 
 app.use(express.static(path.join(__dirname, 'client')));
 app.use(express.static(path.join(__dirname, 'client/js/')));
-app.use(express.static(path.join(__dirname, 'client/css')));
+app.use(express.static(path.join(__dirname, 'client/css/')));
+app.use(express.static(path.join(__dirname, 'client/tiles/')));
 
 // Listen for requests
 var server = app.listen(app.get('port'), function() {
